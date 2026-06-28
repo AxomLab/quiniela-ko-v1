@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Quiniela Mundialista 2026 — ranking visual público." />
+  <title>Quiniela Mundialista 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=20260605-03" />
+</head>
+<body>
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar modo claro u oscuro">☀️</button>
+
+  <div class="stadium-lights" aria-hidden="true">
+    <div class="light-tower tower-left"></div>
+    <div class="light-tower tower-right"></div>
+  </div>
+
+  <header class="hero">
+    <h1>Quiniela Mundialista 2026</h1>
+    <div id="stats-rapidos" class="stats-grid"></div>
+  </header>
+
+  <main>
+    <section class="section race-section">
+      <div class="section-head">
+        <h2>🏟️ Carrera Mundialista</h2>
+        <p>Cada participante avanza según sus puntos acumulados. Pasa el mouse o toca el avatar para verlo mejor.</p>
+      </div>
+      <div id="pista" class="race-board"></div>
+    </section>
+
+    <section class="section">
+      <div class="two-columns">
+        <article class="panel">
+          <h2>🏆 Se ve que sí le saben</h2>
+          <div id="top5" class="list-stack"></div>
+        </article>
+
+        <article class="panel">
+          <h2>🎉 Los que vinieron a convivir</h2>
+          <div id="bottom5" class="list-stack"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="two-columns match-columns">
+        <article class="panel">
+          <h2>🔥 Partido caliente</h2>
+          <div id="partido-caliente"></div>
+        </article>
+
+        <article class="panel">
+          <h2>🤪 Datos al azar</h2>
+          <div id="dato-loco"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>📊 Ranking general</h2>
+      </div>
+      <div id="ranking-desktop" class="ranking-desktop"></div>
+      <div id="ranking-mobile" class="ranking-mobile"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>📋 Estado de la quiniela</h2>
+      </div>
+      <div id="resumen" class="summary-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Quiniela Mundialista 2026 · Datos conectados desde Google Sheets</p>
+  </footer>
+
+  <script src="script-v84.js?v=20260611-frases-01"></script>
+</body>
+</html>
